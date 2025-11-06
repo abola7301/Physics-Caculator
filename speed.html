@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="harvardStyles.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <div id="header">
+            <button onclick="window.location.href='density.html'" class="btn btn-success my_btn">DENSITY</button>
+
+            <button onclick="window.location.href='speed.html'" class="btn btn-success my_btn">SPEED</button>
+
+            <button onclick="window.location.href='conversion.html'"class="btn btn-success my_btn">CONVERSION</button>
+
+            <button onclick="window.location.href='index.html'" class="btn btn-success my_btn">HOMEPAGE</button>
+
+            <button onclick="window.location.href='force.html'" class="btn btn-success my_btn">FORCE</button>
+
+            <button onclick="window.location.href='acceleration.html'"class="btn btn-success my_btn">ACCELERATION</button>
+        </div>
+        <div class="physicsUnitDefinitionAndFormulas">
+            <h1 style="margin: 0;">What's Speed?</h1>
+
+            <p style="margin: 0; font-size: 20px;">The rate of change of position of an object in any direction. Speed is measured as the ratio of distance to the time in which the distance was covered</p>
+
+            
+
+            <p style="margin: 0; font-size: 20px;">S = speed || l = length(distance) || t = time</p>
+
+            
+
+            <p style="margin: 0; font-size: 20px;">Formulas are ==> S = l / t || l = S.t || t = l / S</p>
+
+            <br>
+        </div>
+
+        <div id="calculatorContainer">
+
+
+            <div class="calculator">
+
+                <p style="">SPEED CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="distanceForSpeed">Distance:</label>
+
+                    <br>
+
+                    <input type="text" id="distanceForSpeed" placeholder="Distance" autocomplete="off" class="textForm form-control">
+
+                    <input list="distanceOptionsForSpeed" id="distanceChoiceForSpeed" class="datalistChoices form-control" placeholder="DISTANCE" style="margin-bottom: 65px;">
+
+                    <datalist id="distanceOptionsForSpeed">
+
+                        <option value="M">M</option>
+
+                        <option value="KM">KM</option>
+
+                    </datalist>
+
+
+                    <label for="timeForSpeed">Time:</label>
+
+                    <br>
+
+                    <input type="text" id="timeForSpeed" placeholder="Time" autocomplete="off" class="textForm form-control">
+
+                    <input list="timeOptionsForSpeed" id="timeChoiceForSpeed" class="datalistChoices form-control" placeholder="TIME">
+
+                    <br>
+
+                    <datalist id="timeOptionsForSpeed">
+
+                        <option value="S">S</option>
+
+                        <option value="H">H</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <button id="speedSubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="speedAns">Speed</p>
+
+
+
+
+                </form>
+
+                
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p>DISTANCE CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="speedForDistance" style="">Speed:</label>
+
+                    <br>
+
+                    <input type="text" id="speedForDistance" placeholder="Speed" autocomplete="off" class="textForm form-control">
+                    <input list="speedOptionsForDistance" id="speedChoiceForDistance" class="datalistChoices form-control" placeholder="SPEED" style="margin-bottom: 65px;">
+
+                    <datalist id="speedOptionsForDistance">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                    
+
+                    
+
+                    <label for="timeForDistance">Time:</label>
+
+                    <br>
+
+                    <input type="text" id="timeForDistance" placeholder="Time" autocomplete="off" class="textForm form-control">
+                    <input list="timeOptionsForDistance" id="timeChoiceForDistance" class="datalistChoices form-control" placeholder="TIME" style="margin-bottom: 65px;">
+
+                    <datalist id="timeOptionsForDistance">
+
+                        <option value="S">S</option>
+
+                        <option value="H">H</option>
+
+                    </datalist>
+
+                    
+
+
+                    
+
+
+                    <button id="distanceSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 12px;">Calculate</button>
+
+                    <br>
+
+                    <p id="distanceAns">Distance</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p style="">TIME CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="distanceForTime">Distance:</label>
+
+                    <br>
+
+                    <input type="text" id="distanceForTime" placeholder="Distance" autocomplete="off" class="textForm form-control">
+                    <input list="distanceOptionsForTime" id="distanceChoiceForTime" class="datalistChoices form-control" placeholder="DISTANCE" style="margin-bottom: 65px;">
+
+                    <datalist id="distanceOptionsForTime">
+
+                        <option value="M">M</option>
+
+                        <option value="KM">KM</option>
+
+                    </datalist>
+
+
+                    <label for="speedForTime">Speed:</label>
+
+                    <br>
+
+                    <input type="text" id="speedForTime" placeholder="Speed" autocomplete="off" class="textForm form-control">
+                    <input list="speedOptionsForTime" id="speedChoiceForTime" class="datalistChoices form-control" placeholder="SPEED" style="margin-bottom: 65px;">
+
+                    <datalist id="speedOptionsForTime">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                
+                    
+
+                    <button id="timeSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 12px;">Calculate</button>
+
+                    <br>
+
+                    <p id="timeAns">Time</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+        
+            
+        </div>
+
+            
+
+            
+
+            
+        </div>
+
+
+        <div id="footer">
+            <p style="">Developed And Designed By Ali Abolghasemi</p>
+
+            <p style="font-family: fantasy;">For Harvard's CS50 Final Project, 2025</p>
+
+        </div>
+
+
+        <script src="speed.js"></script>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="harvardStyles.css">
+
+        
+    </head>
+
+    <body>
+        <div id="header">
+            <button onclick="window.location.href='density.html'" class="btn btn-success my_btn">DENSITY</button>
+
+            <button onclick="window.location.href='speed.html'" class="btn btn-success my_btn">SPEED</button>
+
+            <button onclick="window.location.href='conversion.html'"class="btn btn-success my_btn">CONVERSION</button>
+
+            <button onclick="window.location.href='index.html'" class="btn btn-success my_btn">HOMEPAGE</button>
+
+            <button onclick="window.location.href='force.html'" class="btn btn-success my_btn">FORCE</button>
+
+            <button onclick="window.location.href='acceleration.html'"class="btn btn-success my_btn">ACCELERATION</button>
+        </div>
+
+        <div class="physicsUnitDefinitionAndFormulas">
+            <h1 style="margin: 0;">What's Acceleration?</h1>
+
+            <p style="margin: 0; font-size: 20px;">Acceleration is the rate at which velocity changes with time</p>
+
+            <p style="margin: 0; font-size: 20px;">a = acceleration || Δv = velocity differences || t = time</p>
+
+            <p style="margin: 0; font-size: 20px;">Formulas are ==> a = Δv / t || Δv = a.t || t = Δv / a</p>
+
+            <br>
+        </div>
+
+        <div id="calculatorContainer" style="height: 120%;">
+
+
+            <div class="calculator">
+
+                <p style="margin-bottom: 52px;">ACCELERATION CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="velocity1ForAcceleration">Velocities</label>
+
+                    <br>
+
+                    <input type="text" id="velocity1ForAcceleration" placeholder="Velocity-1" autocomplete="off" class="textForm form-control">
+
+                    <input list="velocity1OptionsForAcceleration" id="velocity1ChoiceForAcceleration" class="datalistChoices form-control" placeholder="VELOCITY" style="margin-bottom: 65px;">
+
+                    <datalist id="velocity1OptionsForAcceleration">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                    <br>
+
+
+                    <input type="text" id="velocity2ForAcceleration" placeholder="Velocity-2" autocomplete="off" class="textForm form-control">
+
+                    <input list="velocity2OptionsForAcceleration" id="velocity2ChoiceForAcceleration" class="datalistChoices form-control" placeholder="VELOCITY">
+
+                    <datalist id="velocity2OptionsForAcceleration">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <label for="timeForAcceleration">Time:</label>
+
+                    <br>
+
+                    <input type="text" id="timeForAcceleration" placeholder="Time" autocomplete="off" class="textForm form-control">
+
+                    <input list="timeOptionsForAcceleration" id="timeChoiceForAcceleration" class="datalistChoices form-control" placeholder="TIME">
+
+                    <br>
+
+                    <datalist id="timeOptionsForAcceleration">
+
+                        <option value="S">S</option>
+
+                        <option value="H">H</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <button id="accelerationSubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="accelerationAns">Acceleration</p>
+
+
+
+
+                </form>
+
+                
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p>VELOCITY DIFFERENCE CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="accelerationForVelocity">Acceleration:</label>
+
+                    <br>
+
+                    <input type="text" id="accelerationForVelocity" placeholder="Acceleration" autocomplete="off" class="textForm form-control">
+                    <input list="accelerationOptionsForVelocity" id="accelerationChoiceForVelocity" class="datalistChoices form-control" placeholder="ACCELERATION">
+
+                    <datalist id="accelerationOptionsForVelocity">
+
+                        <option value="M/S2">M/S2</option>
+
+                        <option value="KM/H2">KM/H2</option>
+
+                    </datalist>
+
+                    
+
+                    <br>
+
+                    <br>
+
+                    <label for="timeForVelocity">Time:</label>
+
+                    <br>
+
+                    <input type="text" id="timeForVelocity" placeholder="Time" autocomplete="off" class="textForm form-control">
+                    <input list="timeOptionsForVelocity" id="timeChoiceForVelocity" class="datalistChoices form-control" placeholder="TIME">
+
+                    <datalist id="timeOptionsForVelocity">
+
+                        <option value="S">S</option>
+
+                        <option value="H">H</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <br>
+
+                    <br>
+                    
+                    <br>
+
+                    <br>
+
+                    <br>
+
+                    <br>
+
+                    
+
+
+                    <button id="velocitySubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 14px;">Calculate</button>
+
+                    <br>
+
+                    <p id="velocityAns">Velocity Difference</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p style="margin-bottom: 52px;">TIME CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="accelerationForTime">Acceleration:</label>
+
+                    <br>
+
+                    <input type="text" id="accelerationForTime" placeholder="Acceleration" autocomplete="off" class="textForm form-control">
+                    <input list="accelerationOptionsForTime" id="accelerationChoiceForTime" class="datalistChoices form-control" placeholder="VELOCITY">
+
+                    <datalist id="accelerationOptionsForTime">
+
+                        <option value="M/S2">M/S2</option>
+
+                        <option value="KM/H2">KM/H2</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    
+
+                    <label for="velocity1ForTime">Velocities</label>
+
+                    <br>
+
+                    <input type="text" id="velocity1ForTime" placeholder="Velocity-1" autocomplete="off" class="textForm form-control">
+
+                    <input list="velocity1OptionsForTime" id="velocity1ChoiceForTime" class="datalistChoices form-control" placeholder="VELOCITY" style="margin-bottom: 65px;">
+
+                    <datalist id="velocity1OptionsForTime">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                    
+
+                    <label for="velocity2ForTime" style="color: red; margin-top: -30px;">If you have the differences enter two velocities with the same difference</label>
+                    <input type="text" id="velocity2ForTime" placeholder="Velocity-2" autocomplete="off" class="textForm form-control">
+
+                    <input list="velocity2OptionsForTime" id="velocity2ChoiceForTime" class="datalistChoices form-control" placeholder="VELOCITY">
+
+                    <datalist id="velocity2OptionsForTime">
+
+                        <option value="M/S">M/S</option>
+
+                        <option value="KM/H">KM/H</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    
+
+                    
+
+                    <button id="timeSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 0px;">Calculate</button>
+
+                    <br>
+
+                    <p id="timeAns">Time</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+        
+            
+        </div>
+
+            
+
+            
+
+            
+        </div>
+
+
+        <div id="footer">
+            <p style="color: black; font-size: 30px;">Developed And Designed By Ali Abolghasemi</p>
+
+            <p style="color: black; font-size: 25px; font-family: fantasy;">For Harvard's CS50 Final Project, 2025</p>
+
+        </div>
+
+
+        <script src="acceleration.js"></script>
+    </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="harvardStyles.css">
+
+        
+    </head>
+
+    <body>
+        <div id="header">
+            <button onclick="window.location.href='density.html'" class="btn btn-success my_btn">DENSITY</button>
+
+            <button onclick="window.location.href='speed.html'" class="btn btn-success my_btn">SPEED</button>
+
+            <button onclick="window.location.href='conversion.html'"class="btn btn-success my_btn">CONVERSION</button>
+
+            <button onclick="window.location.href='index.html'" class="btn btn-success my_btn">HOMEPAGE</button>
+
+            <button onclick="window.location.href='force.html'" class="btn btn-success my_btn">FORCE</button>
+
+            <button onclick="window.location.href='acceleration.html'"class="btn btn-success my_btn">ACCELERATION</button>
+        </div>
+
+        <div class="physicsUnitDefinitionAndFormulas">
+            <h1 style="margin: 0;">What's Density?</h1>
+
+            <p style="margin: 0; font-size: 20px;">Density is the relationship between the mass of the substance and the volume it takes up</p>
+
+            <p style="margin: 0; font-size: 20px;">p = density || m = mass || v = volume</p>
+
+            <p style="margin: 0; font-size: 20px;">Formulas are ==> p = m / v || m = p.v || v = m / p</p>
+
+            <br>
+        </div>
+
+        </div>
+
+        <div id="calculatorContainer">
+
+
+            <div class="calculator">
+
+                <p>DENISTY CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="massForDensity">Mass:</label>
+
+                    <br>
+
+                    <input type="text" id="massForDensity" placeholder="Mass" autocomplete="off" class="textForm form-control">
+
+                    <input list="massOptionsForDensity" id="massChoiceForDensity" class="datalistChoices form-control" placeholder="MASS">
+
+                    <datalist id="massOptionsForDensity">
+
+                        <option value="KG">KG</option>
+
+                        <option value="G">G</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <label for="volumeForDensity">Volume:</label>
+
+                    <br>
+
+                    <input type="text" id="volumeForDensity" placeholder="Volume" autocomplete="off" class="textForm form-control">
+
+                    <input list="volumeOptionsForDensity" id="volumeChoiceForDensity" class="datalistChoices form-control" placeholder="VOLUME">
+
+                    <br>
+
+                    <datalist id="volumeOptionsForDensity">
+
+                        <option value="M3">M3</option>
+
+                        <option value="CM3">CM3</option>
+
+                        <option value="LIT">LIT</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <button id="densitySubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="densityAns">Density</p>
+
+
+
+
+                </form>
+
+                
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p>MASS CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="densityForMass">Density:</label>
+
+                    <br>
+
+                    <input type="text" id="densityForMass" placeholder="Density" autocomplete="off" class="textForm form-control">
+                    <input list="densityOptionsForMass" id="densityChoiceForMass" class="datalistChoices form-control" placeholder="DENISTY">
+
+                    <datalist id="densityOptionsForMass">
+
+                        <option value="KG/M3">KG/M3</option>
+
+                        <option value="G/CM3">G/CM3</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <label for="volumeForMass">Volume:</label>
+
+                    <br>
+
+                    <input type="text" id="volumeForMass" placeholder="Volume" autocomplete="off" class="textForm form-control">
+                    <input list="volumeOptionsForMass" id="volumeChoiceForMass" class="datalistChoices form-control" placeholder="VOLUME">
+
+                    <datalist id="volumeOptionsForMass">
+
+                        <option value="M3">M3</option>
+
+                        <option value="CM3">CM3</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    
+
+
+
+                    <button id="massSubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="massAns">Mass</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p>VOLUME CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="densityForVolume">Density:</label>
+
+                    <br>
+
+                    <input type="text" id="densityForVolume" placeholder="Density" autocomplete="off" class="textForm form-control">
+                    <input list="densityOptionsForVolume" id="densityChoiceForVolume" class="datalistChoices form-control" placeholder="DENISTY">
+
+                    <datalist id="densityOptionsForVolume">
+
+                        <option value="KG/M3">KG/M3</option>
+
+                        <option value="G/CM3">G/CM3</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <label for="massForDensity">Mass:</label>
+
+                    <br>
+
+                    <input type="text" id="massForVolume" placeholder="Mass" autocomplete="off" class="textForm form-control">
+                    <input list="massOptionsForVolume" id="massChoiceForVolume" class="datalistChoices form-control" placeholder="MASS">
+
+                    <datalist id="massOptionsForVolume">
+
+                        <option value="KG">KG</option>
+
+                        <option value="G">G</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <br>
+
+                    <button id="volumeSubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="volumeAns">Volume</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+        
+            
+        </div>
+
+            
+
+            
+
+            
+        </div>
+
+
+        <div id="footer">
+            <p style="color: black; font-size: 30px;">Developed And Designed By Ali Abolghasemi</p>
+
+            <p style="color: black; font-size: 25px; font-family: fantasy;">For Harvard's CS50 Final Project, 2025</p>
+        </div>
+
+
+        <script src="density.js"></script>
+    </body>
+</html>

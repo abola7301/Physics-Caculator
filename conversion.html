@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="harvardStyles.css">
+
+        
+    </head>
+
+    <body>
+        <div id="header">
+            <button onclick="window.location.href='density.html'" class="btn btn-success my_btn">DENSITY</button>
+
+            <button onclick="window.location.href='speed.html'" class="btn btn-success my_btn">SPEED</button>
+
+            <button onclick="window.location.href='conversion.html'"class="btn btn-success my_btn">CONVERSION</button>
+
+            <button onclick="window.location.href='index.html'" class="btn btn-success my_btn">HOMEPAGE</button>
+
+            <button onclick="window.location.href='force.html'" class="btn btn-success my_btn">FORCE</button>
+
+            <button onclick="window.location.href='acceleration.html'"class="btn btn-success my_btn">ACCELERATION</button>
+        </div>
+
+        <div class="physicsUnitDefinitionAndFormulas">
+            <h1 style="margin: 0;">What's CONVERSION?</h1>
+
+            <p style="margin: 0; font-size: 20px;">Density is the relationship between the mass of the substance and the volume it takes up</p>
+
+            <p style="margin: 0; font-size: 20px;">p = density || m = mass || v = volume</p>
+
+            <p style="margin: 0; font-size: 20px;">Formulas are ==> p = m / v || m = p.v || v = m / p</p>
+
+            <br>
+        </div>
+
+        </div>
+
+        <h1 style="text-align: center; background-color: black; color: white; margin: 0;">Unit Conversion</h1>
+
+        <div id="calculatorContainerForConversion">
+
+            
+
+            <div class="calculatorHorizon">
+                <div>
+                    <form action="">
+                        <label for="G/CM3toKG/M3">G/CM3:  </label>
+    
+                        <input type="" id="G/CM3toKG/M3" class="textForm form-control" style="height: 50px; width: 200px;">
+    
+                        <button id="G/CM3SubmitButton" type="button" class="submitBtn btn btn-outline-success" style="height: 50px; width: 200px;">Calculate</button>
+    
+                        <label for="" id="G/CM3Ans" style="width: 400px;">KG/M3</label>
+                    </form>
+                </div>
+
+                <br>
+
+                <div>
+                    <form action="">
+                        <label for="KG/M3toG/CM3">KG/M3:  </label>
+    
+                        <input type="" id="KG/M3toG/CM3" class="textForm form-control" style="height: 50px; width: 200px;">
+    
+                        <button id="KG/M3SubmitButton" type="button" class="submitBtn btn btn-outline-success" style="height: 50px; width: 200px;">Calculate</button>
+    
+                        <label for="" id="KG/M3Ans" style="width: 400px;">G/CM3</label>
+                    </form>
+                </div>
+
+                <br>
+
+                <div>
+                    <form action="">
+                        <label for="">M/S:  </label>
+    
+                        <input type="" id="M/StoKM/H" class="textForm form-control" style="height: 50px; width: 200px;">
+    
+                        <button id="M/SSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="height: 50px; width: 200px;">Calculate</button>
+    
+                        <label for="" id="M/SAns" style=" width: 400px;">KM/H</label>
+                    </form>
+                </div>
+
+                <br>
+
+                <div>
+                    <form action="">
+                        <label for="KM/HtoM/S">KM/H:  </label>
+    
+                        <input type="" id="KM/HtoM/S" class="textForm form-control" style="height: 50px; width: 200px;">
+    
+                        <button id="KM/HSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="height: 50px; width: 200px;">Calculate</button>
+    
+                        <label for="" id="KM/HAns" style="width: 400px;">M/S</label>
+                    </form>
+                </div>
+
+                
+
+                
+                
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <p style="color: black; font-size: 30px;">Developed And Designed By Ali Abolghasemi</p>
+
+            <p style="color: black; font-size: 25px; font-family: fantasy;">For Harvard's CS50 Final Project, 2025</p>
+        </div>
+
+
+        <script src="conversion.js"></script>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <link rel="stylesheet" href="harvardStyles.css">
+
+        
+    </head>
+
+    <body>
+        <div id="header">
+            <button onclick="window.location.href='density.html'" class="btn btn-success my_btn">DENSITY</button>
+
+            <button onclick="window.location.href='speed.html'" class="btn btn-success my_btn">SPEED</button>
+
+            <button onclick="window.location.href='conversion.html'"class="btn btn-success my_btn">CONVERSION</button>
+
+            <button onclick="window.location.href='index.html'" class="btn btn-success my_btn">HOMEPAGE</button>
+
+            <button onclick="window.location.href='force.html'" class="btn btn-success my_btn">FORCE</button>
+
+            <button onclick="window.location.href='acceleration.html'"class="btn btn-success my_btn">ACCELERATION</button>
+        </div>
+
+        <div class="physicsUnitDefinitionAndFormulas">
+            <h1 style="margin: 0;">What's Force?</h1>
+
+            <p style="margin: 0; font-size: 20px;">Force is the push and pull of objects that has a direct relationship with the objects mass and acceleration</p>
+
+            <p style="margin: 0; font-size: 20px;">f = density || m = mass || a = acceleration</p>
+
+            <p style="margin: 0; font-size: 20px;">Formulas are ==> f = m.a || m = f / a || a = f / m</p>
+
+            <br>
+        </div>
+
+        <div id="calculatorContainer" style="height: 90%;">
+
+
+            <div class="calculator">
+
+                <p style="">FORCE CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="accelerationForForce">Acceleration</label>
+
+                    <br>
+
+                    <input type="text" id="accelerationForForce" placeholder="Acceleration" autocomplete="off" class="textForm form-control">
+
+                    <input list="accelerationOptionsForForce" id="accelerationChoiceForForce" class="datalistChoices form-control" placeholder="ACCELERATION" style="margin-bottom: 65px;">
+
+                    <datalist id="accelerationOptionsForForce">
+
+                        <option value="M/S2">M/S2</option>
+
+                        <option value="KM/H2">KM/H2</option>
+
+                    </datalist>
+
+
+                    <label for="massForForce">Mass:</label>
+
+                    <br>
+
+                    <input type="text" id="massForForce" placeholder="Mass" autocomplete="off" class="textForm form-control">
+
+                    <input list="massOptionsForForce" id="massChoiceForForce" class="datalistChoices form-control" placeholder="MASS">
+
+                    <br>
+
+                    <datalist id="massOptionsForForce">
+
+                        <option value="KG">KG</option>
+
+                        <option value="G">G</option>
+
+                    </datalist>
+
+                    <br>
+
+                    <button id="forceSubmitButton" type="button" class="submitBtn btn btn-outline-success">Calculate</button>
+
+                    <br>
+
+                    <p id="forceAns">Force</p>
+
+
+
+
+                </form>
+
+                
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p>MASS CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="accelerationForMass" style="">Acceleration:</label>
+
+                    <br>
+
+                    <input type="text" id="accelerationForMass" placeholder="Acceleration" autocomplete="off" class="textForm form-control">
+                    <input list="accelerationOptionsForMass" id="accelerationChoiceForMass" class="datalistChoices form-control" placeholder="ACCELERATION" style="margin-bottom: 65px;">
+
+                    <datalist id="accelerationOptionsForMass">
+
+                        <option value="M/S2">M/S2</option>
+
+                        <option value="KM/H2">KM/H2</option>
+
+                    </datalist>
+                    
+
+                    <label for="forceForMass">Force:</label>
+
+                    <br>
+
+                    <input type="text" id="forceForMass" placeholder="Force" autocomplete="off" class="textForm form-control" style="width: 379px; display: inline-block;">
+                    <p style="display: inline-block;">N</p>
+
+                    <br>
+
+                    <br>
+
+                    <br>
+                    <br>
+
+
+                    
+
+
+                    <button id="massSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 12px;">Calculate</button>
+
+                    <br>
+
+                    <p id="massAns">Mass</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="calculator">
+
+                <p style="">ACCELERATION CALCULATOR</p>
+
+                <form action="">
+
+                    <label for="forceForAcceleration">Force:</label>
+
+                    <br>
+
+                    <input type="text" id="forceForAcceleration" placeholder="Force" autocomplete="off" class="textForm form-control" style="display: inline-block; width: 379px;">
+
+                    <p style="display: inline-block;">N</p>
+                    <br>
+
+                    <br>
+
+                    <br>
+
+                    <br>
+
+                    <label for="massForAcceleration">Mass:</label>
+
+                    <br>
+
+                    <input type="text" id="massForAcceleration" placeholder="Mass" autocomplete="off" class="textForm form-control">
+                    <input list="massOptionsForAcceleration" id="massChoiceForAcceleration" class="datalistChoices form-control" placeholder="MASS" style="margin-bottom: 65px;">
+
+                    <datalist id="massOptionsForAcceleration">
+
+                        <option value="KG">KG</option>
+
+                        <option value="G">G</option>
+
+                    </datalist>
+                    
+                    
+
+                    <button id="accelerationSubmitButton" type="button" class="submitBtn btn btn-outline-success" style="margin-top: 12px;">Calculate</button>
+
+                    <br>
+
+                    <p id="accelerationAns">Acceleration</p>
+
+
+
+
+                </form>
+
+
+            </div>
+
+        
+            
+        </div>
+
+            
+
+            
+
+            
+        </div>
+
+
+        <div id="footer">
+            <p style="color: black; font-size: 30px;">Developed And Designed By Ali Abolghasemi</p>
+
+            <p style="color: black; font-size: 25px; font-family: fantasy;">For Harvard's CS50 Final Project, 2025</p>
+
+        </div>
+
+
+        <script src="force.js"></script>
+    </body>
+</html>

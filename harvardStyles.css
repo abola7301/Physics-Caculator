@@ -1,0 +1,224 @@
+html, body
+{
+    height: 100%;
+
+    margin: 0;
+}
+
+#header
+{
+    background-color: black;
+
+    margin: 0;
+
+    height: 5.90%;
+}
+
+#explain
+{
+    background-color: black;
+
+    height: 80%;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+.my_btn
+{
+    float: right;
+
+    width: 16.66%;
+
+    color: grey;
+
+    background-color: black;
+
+    border: 1px gray solid;
+
+    margin: 0;
+}
+
+.my_btn:hover
+{
+    background-color: rgb(64, 64, 64);
+
+    border: 1px gray solid;
+
+}
+
+
+#footer
+{
+    background-color: gray;
+
+    height: 18%;
+
+    padding: 10px;
+
+    text-align: center;
+
+    color: black;
+
+    font-size: 30px;
+}
+
+.densityCalc
+{
+    margin-top: 90px;
+}
+
+.form-label
+{
+    color: white;
+
+    padding-right: 20px;
+}
+
+.dens_btn
+{
+    background-color: black;
+
+    border: white 1px solid;
+
+    width: 300px;
+}
+
+.dens_btn:hover
+{
+    background-color: gray;
+
+    border: white 1px solid;
+}
+
+#volume, #mass, #density
+{
+    height: 50px;
+
+    border-radius: 7px;
+}
+
+#calcOption
+{
+    background-color: red;
+}
+
+#calculatorContainer
+{
+    display: flex;             /* place children in a row */
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 7px;/* space between calculators */
+
+    height: 85%;
+
+    background-color: black;
+
+    color: white;
+}
+
+
+.calculator {
+    flex: 1;                   /* flexible width */
+    min-width: 250px;          /* prevents shrinking too much */
+    border: 2px solid #ccc;    /* optional styling */
+    border-radius: 10px;
+    padding: 5px;
+
+    height: 100%;
+
+    text-align: center;
+
+    font-size: x-large;
+}
+
+#calculatorContainerForConversion
+{
+    display: flex;             /* place children in a row */
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 7px;/* space between calculators */
+
+    height: 66%;
+
+    
+
+    background-color: black;
+
+    color: white;
+}
+
+.calculatorHorizon {
+    flex: 1;
+    min-height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+
+    /* stack each form vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:normal;
+    gap: 20px; /* space between each form */
+}
+
+/* inside each form → horizontal layout */
+.calculatorHorizon form {
+    display: flex;
+    flex-direction: row; /* label, input, button, result side by side */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculatorHorizon form label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block; 
+}
+
+
+
+
+
+.textForm
+{
+    height: 70px;
+
+    background-color: gray;
+}
+
+.datalistChoices
+{
+
+    margin-top: 5px;
+
+    border-radius: 7px;
+
+    background-color: gray;
+}
+
+.submitBtn
+{
+    width: 95%;
+}
+
+.physicsUnitDefinitionAndFormulas
+{
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    margin: 0;
+
+
+    
+}
